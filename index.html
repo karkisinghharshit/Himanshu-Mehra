@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Himanshu | Portfolio</title>
+
+<style>
+/* ===== GLOBAL ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+}
+
+/* ===== HEADER ===== */
+header{
+  text-align:center;
+  padding:80px 20px;
+}
+
+header h1{
+  font-size:3rem;
+  letter-spacing:1px;
+}
+
+header p{
+  margin-top:15px;
+  font-size:1.2rem;
+  color:#ddd;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 25px;
+  background:#00c6ff;
+  background:linear-gradient(to right,#0072ff,#00c6ff);
+  color:#fff;
+  text-decoration:none;
+  border-radius:30px;
+  transition:0.3s ease;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  background:rgba(0,0,0,0.5);
+  display:flex;
+  justify-content:center;
+  padding:15px;
+  position:sticky;
+  top:0;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin:0 20px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#00c6ff;
+}
+
+/* ===== SECTION ===== */
+section{
+  padding:60px 10%;
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:2rem;
+  position:relative;
+}
+
+section h2::after{
+  content:'';
+  width:80px;
+  height:3px;
+  background:#00c6ff;
+  display:block;
+  margin:10px auto;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:rgba(255,255,255,0.08);
+  padding:30px;
+  border-radius:15px;
+  margin-bottom:30px;
+  backdrop-filter:blur(10px);
+  transition:0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  background:rgba(255,255,255,0.12);
+}
+
+ul{
+  list-style:none;
+}
+
+ul li{
+  padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  padding:20px;
+  background:rgba(0,0,0,0.5);
+  margin-top:40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  header h1{
+    font-size:2.2rem;
+  }
+  section{
+    padding:40px 5%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>Himanshu's Portfolio</h1>
+  <p>B.Tech CSE Student | Aspiring Software Engineer</p>
+  <a class="btn" href="https://www.linkedin.com/in/himanshu-mehra-b48270302?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+    Connect on LinkedIn
+  </a>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#assignments">Assignments</a>
+</nav>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+  <h2>About Me</h2>
+
+  <div class="card">
+    <p>
+      Hello! My name is Himanshu and I am currently pursuing 
+      <strong>B.Tech in Computer Science and Engineering</strong>. 
+      I am passionate about technology, problem-solving, and building innovative solutions. 
+      I enjoy working on software development and machine learning projects.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Introduction Video</h3>
+    <br>
+    <a class="btn" href="https://drive.google.com/file/d/1IEXUDZZ_0JqT3d9JZHnxMBsjYfH-zH64/view?usp=drivesdk" target="_blank">
+      ▶ Watch Introduction Video
+    </a>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <ul>
+      <li>C</li>
+      <li>C++</li>
+      <li>Python</li>
+      <li>Scikit-learn</li>
+      <li>TensorFlow</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Faculty Attendance System</h3>
+    <br>
+    <a class="btn" href="#" target="_blank">View Project</a>
+  </div>
+
+  <div class="card">
+    <h3>Alumni Management System</h3>
+    <br>
+    <a class="btn" href="#" target="_blank">View Project</a>
+  </div>
+</section>
+
+<!-- ASSIGNMENTS -->
+<section id="assignments">
+  <h2>Assignments</h2>
+  <div class="card">
+    <p><strong>Assignment 1: Profiling Sheet</strong></p>
+    <br>
+    <a class="btn" href="https://drive.google.com/file/d/10KR79hgrgm0Q98e4No8JvSmQGkG_HvZm/view?usp=drivesdk" target="_blank">
+      View Document
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Himanshu | B.Tech CSE Portfolio</p>
+</footer>
+
+</body>
+</html>
